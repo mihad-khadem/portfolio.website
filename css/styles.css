@@ -277,7 +277,7 @@ section.about {
   justify-self: center;
 }
 .about-img img {
-  width: 200px;
+  width: 180px;
   border-radius: 0.5rem;
   cursor: pointer;
 }
@@ -411,14 +411,16 @@ img.man-icons {
   width: 70%;
 }
 .skills-js {
-  width: 85%;
+  width: 70%;
 }
-.skills-react,
+.skills-react{
+  width: 30%;
+}
 .skills-mongo {
-  width: 40%;
+  width: 30%;
 }
 .skills-redux {
-  width: 90%;
+  width: 20%;
 }
 .skills-mui,
 .skills-sql {
@@ -428,10 +430,10 @@ img.man-icons {
   width: 20%;
 }
 .skills-express{
-  width: 40%;
+  width: 25%;
 }
 .skills-node {
-  width: 85%;
+  width: 45%;
 }
 .skills-img {
   border-radius: 0.5rem;
