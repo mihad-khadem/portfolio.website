@@ -94,14 +94,32 @@ sr.reveal(".project-img", { interval: 200 });
   var messageArr = ["MERN Developer", "Frontend Developer", "Backend Developer"];
   var textPosition = 0;
   var speed = 200;
-
+  var pauseDuration = 10000; // 30s in milliseconds
+  
   typewriter = () => {
-    // for(let i = 0; i < messageArr.length; i++) {
-    document.querySelector("#jobTitle").innerHTML = messageArr[0].substring(0, textPosition)  ;
-    if(textPosition ++  != messageArr[0].length)
-        setTimeout(typewriter, speed)
-  }
-
-
-  window.addEventListener("load" , typewriter);
-
+      const jobTitleElement = document.querySelector("#jobTitle");
+  
+      if (i < messageArr.length) {
+          if (textPosition < messageArr[i].length) {
+              jobTitleElement.innerHTML = messageArr[i].substring(0, textPosition + 1);
+              textPosition++;
+              setTimeout(typewriter, speed);
+          } else {
+              // Move to the next message and reset textPosition
+              textPosition = 0;
+              i++;
+  
+              // If there are more messages, start typing the next one after a pause
+              if (i < messageArr.length) {
+                  setTimeout(() => {
+                      typewriter();
+                  }, pauseDuration);
+              }
+          }
+      }
+  };
+  
+  let i = 0; // Initialize i outside the function
+  
+  window.addEventListener("load", typewriter);
+  
