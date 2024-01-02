@@ -405,7 +405,7 @@ img.man-icons {
   z-index: var(--z-back);
 }
 .skills-html {
-  width: 75%;
+  width: 85%;
 }
 .skills-css {
   width: 70%;
@@ -414,7 +414,7 @@ img.man-icons {
   width: 70%;
 }
 .skills-react{
-  width: 30%;
+  width: 80%;
 }
 .skills-mongo {
   width: 30%;
@@ -424,16 +424,16 @@ img.man-icons {
 }
 .skills-mui,
 .skills-sql {
-  width: 65%;
+  width: 5%;
 }
 .skills-ts {
   width: 20%;
 }
 .skills-express{
-  width: 25%;
+  width: 45%;
 }
 .skills-node {
-  width: 45%;
+  width: 56%;
 }
 .skills-img {
   border-radius: 0.5rem;
